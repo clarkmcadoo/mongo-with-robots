@@ -1,0 +1,72 @@
+*{
+    font-family: sans-serif;
+}
+header{
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+.firstPart{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    width: 10%;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1%;
+    background-color: lightgrey;
+    text-decoration: none;
+    line-height: 1.5; 
+    color: black;    
+}
+a:hover{
+    background-color: white;
+}
+a:visited{
+    color: black;
+}
+.name{
+    font-size: 24px;
+    color: darkblue;
+}
+.secondPart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.profile-large{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    width: 100%;
+    
+}
+.avatar2 img{
+    border: 1px solid gray;
+    border-radius: 100%;
+}
+li{
+    list-style: none;
+}
+.skilldiv{
+    display: flex;
+}
+
+.name2{
+    font-size: 24px;
+}
+.contact{
+    display: flex;
+}
+.avatar2 img{
+    margin-right: 10px;
+}
+.links{
+    width: 167px;
+}

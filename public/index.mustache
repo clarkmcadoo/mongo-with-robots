@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Directory</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h2>User Directory</h2>
+
+        <a href="/" class="links">Home</a>
+        <a href="/isemployed" class="links">View Employed</a>
+        <a href="/isnotemployed" class="links">View Not Employed</a>
+
+    </header>
+    <section class="firstPart">
+
+        {{#allData}}
+        <a href=./{{id}}>
+            <div class="profile-small">
+                <div class="avatar">
+                    <img src={{avatar}}>
+                </div>
+                <div class="name">
+                    {{name}}
+                </div>
+                <div class="job">
+                    {{job}} {{^job}}
+                    <p style="color: red">Available for Hire!</p>
+                    {{/job}}
+                </div>
+                <div class="company">
+                    {{company}}
+                </div>
+            </div>
+        </a>
+        {{/allData}}
+
+    </section>
+
+
+</body>
+
+</html>

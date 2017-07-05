@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Directory</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h2>{{name}}</h2>
+
+<section class = "secondPart">
+    {{#allData}}
+    <div class="profile-large">
+        <div class="avatar2">
+            <img src={{avatar}}>
+        </div>
+        <div class="all-info">
+        <div class = "name2">{{name}}</div>
+        <div class="info">
+        <div class="contact"> {{#address.city}}{{address.city}},{{/address.city}} {{address.country}} | 
+            <div class=job>{{job}}{{^job}} <div style="color: red">&nbsp Available for Hire!</div>{{/job}}{{company}}</div>
+        </div></div>
+            <div>{{email}}  |  {{phone}}</div>
+            
+            {{#university}}<div><b>Education: </b>{{university}}</div>{{/university}}
+            <div class="skilldiv"><b>Skills: </b><ul>{{#skills}}<li>{{.}}</li>{{/skills}}</ul></div>
+        </div>
+    </div>
+    {{/allData}}
+
+
+</section>
+
+
+</body>
+</html>
